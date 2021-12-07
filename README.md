@@ -18,7 +18,7 @@ Deuxième projet du parcours "Développeur d'application - JavaScript React" d'O
 - Les images présentes dans les maquettes.
 - La police [Raleway](https://fonts.google.com/specimen/Raleway).
 - Les couleurs de la charte :
--- Bleu : #0065FC
--- Bleu clair : #DEEBFF
--- Gris : #F2F2F2
+ Bleu : #0065FC
+ Bleu clair : #DEEBFF
+ Gris : #F2F2F2
 - Les icons disponibles sur le site [Font Awesome](https://fontawesome.com/).
