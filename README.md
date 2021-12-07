@@ -4,6 +4,7 @@ Deuxième projet du parcours "Développeur d'application - JavaScript React" d'O
 ## Cahier des charges
 - Intégrer les deux maquettes fournis par le designer et réaliser en autonomie le site au format tablette.
 - L'intégration doit se faire sans framework ou pré-compilateur, uniquement en HTML5 et CSS3.
+- Contraintes : Utilisation de Flexbox et tailles en Pixel ou %.
 - Le champ de recherche est un champ de saisie, dont le texte peut être édité (la fonction de recherche n'est pas fonctionnelle).
 - Choisir les images en fonction de leur esthétique et de leurs poids pour qu'elle ne soit pas trop lourde pour le chargement.
 - Chaque carte d’hébergement ou d’activité doit être cliquable dans son intégralité (les liens sont vides).
