@@ -29,16 +29,28 @@ body {
     color: var(--color-black);
 }
 
+.font-raleway{
+    font-family: 'Raleway', sans-serif;
+}
+
 .fa-star {
     font-size: 12px;
 }
 
-.fa-star--activate {
+.icon-active {
     color: var(--color-blue);
 }
 
-.fa-star--deactivate {
+.icon-inactive {
     color: var(--color-gray);
+}
+
+.bg-gray{
+    background-color: var(--color-gray);
+}
+
+.bold-600{
+    font-weight: 600;
 }
 
 h1, h2 {
@@ -58,6 +70,12 @@ button {
 }
 
 .container{
+    padding: 0 40px 0 40px;
+    max-width: 1600px;
+    margin: auto;
+}
+
+.nav_container{
     padding: 0 40px 0 40px;
     max-width: 1600px;
     margin: auto;
@@ -95,7 +113,8 @@ ul{
 }
 
 .logo{
-
+    margin: 38px 0px;
+    width: 61.09px;
     margin-right: auto;
     object-fit: cover;
 }
@@ -164,10 +183,11 @@ ul{
 }
 
 .search_form_search-input::placeholder {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.2;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
     color: var(--color-black);
+    font-family: 'Raleway', sans-serif;
 }
 
 .search_form_button {
@@ -229,25 +249,30 @@ ul{
     margin: 5px;
 }
 
+.filter_wrapper-button-active {
+    background-color: var(--color-light-blue);
+    border: 2px solid var(--color-light-blue);
+}
+
 .filter_wrapper-button:hover {
     background-color: var(--color-light-blue);
     border: 2px solid var(--color-light-blue);
 }
 
-.filter_wrapper-icon{
+.filter_wrapper-icon {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     min-width: 44px;
-    min-height: 44px;
-    background-color: var(--color-light-blue);
-    border: 2px solid var(--color-light-blue);
-    border-radius: 25px;
+    /* min-height: 44px; */
+    /* background-color: var(--color-light-blue); */
+    /* border: 2px solid white; */
+    /* border-radius: 25px; */
 }
 
-.filter_title{
-    padding: 0 10px 0 10px;
+.filter_title {
+    padding-right: 10px;
 }
 
 .search_info{
@@ -481,7 +506,7 @@ ul{
 }
 
 .activity_card_title{
-    margin: 10px
+    margin: 15px 10px;
 }
 
 .activity_card_small_wrapper{
@@ -524,14 +549,10 @@ ul{
 }
 
 .activity-column{
-    width: 22%;
+    width: 23%;
 }
 
 /* Footer */
-
-footer{
-    background-color: var(--color-gray);
-}
 
 footer a{
     text-decoration: none; 
@@ -547,7 +568,7 @@ footer a:hover{
 }
 
 .footer_section{
-    padding:20px 0 20px 0;    
+    padding: 20px 0px 80px 0px;    
 }
 
 .ft-main{
@@ -559,22 +580,25 @@ footer a:hover{
     width: 33%;
     line-height: 1.8;
 }
+.ft-links{
+    font-size: 16px
+}
 
 /* Medias */
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 991px){
     .search_filter{
         flex-wrap: wrap;
     }
     .hosting_section {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-bottom: 60px;
     }
     .hosting_wrapper{
         margin-bottom: 30px;
     }
     .hosting_link{
-        min-width: 48%;
+        min-width: 32%;
     }
     .popular_wrapper{
         margin-bottom: 30px;
@@ -584,25 +608,51 @@ footer a:hover{
     }
     .activity_cards{
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
     .activity_link{
         min-width: 46%;
     }
     .activity-column{
-        min-width: 48%;
+        min-width: 20%;
+    }
+
+    .popular_cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .activity_card_img_big{
+        height: 300px;
+    }
+
+    .popular_link {
+        color: var(--color-black);
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+        display: block;
+        width: 32%;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
+    .container{
+        padding: 0 25px;
+        max-width: 1600px;
+        margin: auto;
+    }
     .nav_section{
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .logo{
         padding-left: 40%;
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom: 20px;
         object-fit: cover;
     }
@@ -620,16 +670,28 @@ footer a:hover{
         width: 100%;
         border-top: none;
         border-bottom: 5px solid var(--color-transparent);
-        font-size: 22px;
-        font-weight: bolder;
+        font-size: 20px;
+        font-weight: normal;
     }
     .item:hover {
         border-top:none;
         border-bottom: 5px solid var(--color-blue);
         color :var(--color-blue);
     }
+    .item_selected {
+        border-top: none;
+        border-bottom: 5px solid var(--color-blue);
+        color: var(--color-blue) !important;
+    }
     .search_filter{
         flex-wrap: wrap;
+    }
+    .search_filter_header {
+        margin-right: 14px;
+        width: 100%;
+    }
+    .search_info{
+        margin: 40px 0px;
     }
     .fa-search{
         visibility: visible;
@@ -639,14 +701,55 @@ footer a:hover{
     }
     .search_form_button_icon{
         display: block;
+        padding: 0 15px 0 15px;
     }
+
     .hosting_section {
         flex-direction: column-reverse;
         margin-bottom: 60px;
     }
-    .hosting_wrapper{
+
+    .filter_wrapper-button {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        height: 44px;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .hosting_wrapper {
+        padding: 0px;
+        min-width: 62%;
+        background-color: transparent;
+        border-radius: 15px;
         margin-bottom: 30px;
     }
+    .popular_wrapper {
+        display: flex;
+        flex-direction: column;
+        min-width: 25%;
+        background-color: transparent;
+        border-radius: 20px;
+        padding: 0px;
+    }
+
+    .popular_cards {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .popular_link {
+        color: var(--color-black);
+        text-decoration: none;
+        cursor: pointer;
+        margin-bottom: 20px;
+        display: block;
+        width: 100%;
+    }
+    
     .hosting_cards {
         flex-direction: column;
     }
@@ -666,7 +769,7 @@ footer a:hover{
         flex-direction: column;
     }
     .activity_card_img_big{
-        height: 190px;
+        height: 150px;
     }
     .activity_card_big{
         width: 97%;
@@ -680,6 +783,16 @@ footer a:hover{
     .ft-items{
         margin-bottom: 15px;
         width: 100%;
+    }
+
+    .hide-on-mobile{
+        display: none;
+    }
+    .nav_container{
+        padding: 0;
+        max-width: 1600px;
+        margin: 20px auto;
+
     }
 }
 
