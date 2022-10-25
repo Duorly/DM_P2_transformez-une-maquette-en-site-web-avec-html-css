@@ -105,6 +105,10 @@ ul{
     padding: 0;
 }
 
+.activity_card_big>h3{
+    height: 40px;
+}
+
 .menu{
     display: flex;
     flex-wrap: wrap;
@@ -636,11 +640,15 @@ footer a:hover{
         display: block;
         width: 32%;
     }
+
+    .fa-star {
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-width: 767px){
     .container{
-        padding: 0 25px;
+        padding: 0;
         max-width: 1600px;
         margin: auto;
     }
@@ -650,12 +658,23 @@ footer a:hover{
         justify-content: center;
     }
 
-    .logo{
-        padding-left: 40%;
-        margin-top: 30px;
-        margin-bottom: 20px;
+    .logo {
+
         object-fit: cover;
+        display: block;
+        margin: 30px auto;
     }
+
+    h1, h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.4;
+    }
+
+    .activity_card_big>h3{
+        height: 20px;
+    }
+
     .menu{
         display: flex;
         margin-bottom: 10px;
@@ -730,8 +749,11 @@ footer a:hover{
         flex-direction: column;
         min-width: 25%;
         background-color: transparent;
-        border-radius: 20px;
-        padding: 0px;
+        border-radius: 0px;
+        padding: 30px 0px;
+        background-color:  var(--color-gray);
+        
+        margin-bottom: 30px;
     }
 
     .popular_cards {
@@ -759,9 +781,7 @@ footer a:hover{
     .hosting_link {
         width: 100%;
     }
-    .popular_wrapper{
-        margin-bottom: 30px;
-    }
+
     .popular_card_img {
         height: 180px;
     }
@@ -781,7 +801,7 @@ footer a:hover{
         flex-direction: column;
     }
     .ft-items{
-        margin-bottom: 15px;
+        margin-bottom: 35px;
         width: 100%;
     }
 
@@ -793,6 +813,10 @@ footer a:hover{
         max-width: 1600px;
         margin: 20px auto;
 
+    }
+    .mobile-py-20{
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
